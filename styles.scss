@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400&family=Source+Serif+Pro&display=swap');
+
+
+* {
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Oxygen, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+
+@mixin container {
+    width: 60%;
+    margin: auto;
+}  
+
+
+nav {    
+
+    .menu {
+        background: rgb(54, 54, 54);
+        width: 8%;
+        padding: 3%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        display: none;
+        z-index: 1;
+
+        ul li {
+            padding: 10%;
+            color: white;
+        }
+
+        ul li a:hover {
+            color: rgb(43, 192, 202);
+        }
+
+        ul li a {
+            color: white;
+        }
+    }
+
+    .social-icons {
+        width: 8%;
+        display: flex;
+        justify-content: space-around;
+        position: absolute;
+        top:0;
+        right: 10%;
+        margin: 1.5%;
+
+        .fa-brands {
+            font-size: 2em;
+            color: black;
+            
+        }
+        .fa-brands:hover {
+            color: rgb(43, 192, 202);
+        }
+
+    }
+}
+
+.container {
+    @include container;
+    
+}
+
+.logo-si-hamburger {
+    display: flex;
+    justify-content: space-between;
+    padding: 3%;
+
+    h3 {
+        font-size: 2em;
+    }
+}
+
+.toggle-button {
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+
+    .bar {
+        background: black;
+        width: 100%;
+        height: 3px;
+        border-radius: 10px;
+
+    }
+}
+
+.main {
+    background: #292D33;
+    padding: 8% 0;
+    position: relative;
+
+    .red {
+        background: #F24B01;
+        width: 30%;
+        height: 27%;
+        position: absolute;
+        top: 10%;
+        left: 20%;
+        z-index: 0;
+        
+    }
+    .yellow {
+        background: #ECDC13;
+        width: 30%;
+        height: 27%;
+        position: absolute;
+        right: 20%;
+        bottom: 10%;
+
+    }
+
+}
+
+
+
+.center {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+    
+    
+
+    img {
+        width: 30%
+    }
+    .middle {
+        width: 30%;
+        background: rgb(255, 255, 255);
+        padding: 3%;
+
+        h2 {
+            color: #F24B01;
+            font-size: 4em;
+            text-align: center;
+            font-family: Source Serif Pro, sans-serif;
+            
+
+
+        }
+        h4 {
+            margin: 0 auto;
+            width: 75%;
+            font-size: 1.5em;
+            margin-bottom: 10%;
+
+        }
+        p {
+            line-height: 1.5;
+            width: 75%;
+            margin:0 auto;
+
+
+        }
+        button {
+            background: white;
+            color: rgb(73, 73, 73);
+            border: 4px solid rgb(73, 73, 73);
+            padding: 2%;
+            margin-top: 20%;
+            font-size: 1.5em;
+            width: 75%;
+
+            
+            
+            
+        }
+        button:hover {
+            border: none;
+            cursor: pointer;
+        }
+
+    }
+    .last {
+        width: 30%;
+        padding: 3%;
+        background: #E5E5E5;
+        
+
+
+        .last-container {
+            width: 100%;
+            height: 30%;
+            padding-top: 100%;
+
+            p {
+                font-size: 1.5em;
+                
+            }
+
+            ul li {
+                padding: 3% 0;
+            }
+        }
+    }
+}
+
+footer {
+    background: #333333;
+
+    .container {
+        @include container;
+
+    }
+
+    .footer-container {
+        display: flex;
+        justify-content: space-around;
+        padding: 7% 0;
+
+        .social {
+
+            p {
+                width: 70%;
+                color: white;
+                font-size: 1em;
+                line-height: 1.5;
+            }
+            .social-icons-footer {
+                position: relative;
+                left: 24%;
+                 
+                a{
+                    color: white;
+                    padding: 3% 0;
+                    padding-right: 3%;
+                }
+             
+                
+            }
+        }
+        ul li a {
+            color: white;
+        }
+        ul li a:hover {
+            color: rgb(218, 218, 218);
+        }
+    }
+    p {
+        text-align: center;
+        padding: 4% 0;
+        color: white;
+    }
+}
+

@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400&family=Source+Serif+Pro&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Oxygen, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+nav .menu {
+  background: #363636;
+  width: 8%;
+  padding: 3%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: none;
+  z-index: 1;
+}
+
+nav .menu ul li {
+  padding: 10%;
+  color: white;
+}
+
+nav .menu ul li a:hover {
+  color: #2bc0ca;
+}
+
+nav .menu ul li a {
+  color: white;
+}
+
+nav .social-icons {
+  width: 8%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  position: absolute;
+  top: 0;
+  right: 10%;
+  margin: 1.5%;
+}
+
+nav .social-icons .fa-brands {
+  font-size: 2em;
+  color: black;
+}
+
+nav .social-icons .fa-brands:hover {
+  color: #2bc0ca;
+}
+
+.container {
+  width: 60%;
+  margin: auto;
+}
+
+.logo-si-hamburger {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 3%;
+}
+
+.logo-si-hamburger h3 {
+  font-size: 2em;
+}
+
+.toggle-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar {
+  background: black;
+  width: 100%;
+  height: 3px;
+  border-radius: 10px;
+}
+
+.main {
+  background: #292D33;
+  padding: 8% 0;
+  position: relative;
+}
+
+.main .red {
+  background: #F24B01;
+  width: 30%;
+  height: 27%;
+  position: absolute;
+  top: 10%;
+  left: 20%;
+  z-index: 0;
+}
+
+.main .yellow {
+  background: #ECDC13;
+  width: 30%;
+  height: 27%;
+  position: absolute;
+  right: 20%;
+  bottom: 10%;
+}
+
+.center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  z-index: 2;
+}
+
+.center img {
+  width: 30%;
+}
+
+.center .middle {
+  width: 30%;
+  background: white;
+  padding: 3%;
+}
+
+.center .middle h2 {
+  color: #F24B01;
+  font-size: 4em;
+  text-align: center;
+  font-family: Source Serif Pro, sans-serif;
+}
+
+.center .middle h4 {
+  margin: 0 auto;
+  width: 75%;
+  font-size: 1.5em;
+  margin-bottom: 10%;
+}
+
+.center .middle p {
+  line-height: 1.5;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.center .middle button {
+  background: white;
+  color: #494949;
+  border: 4px solid #494949;
+  padding: 2%;
+  margin-top: 20%;
+  font-size: 1.5em;
+  width: 75%;
+}
+
+.center .middle button:hover {
+  border: none;
+  cursor: pointer;
+}
+
+.center .last {
+  width: 30%;
+  padding: 3%;
+  background: #E5E5E5;
+}
+
+.center .last .last-container {
+  width: 100%;
+  height: 30%;
+  padding-top: 100%;
+}
+
+.center .last .last-container p {
+  font-size: 1.5em;
+}
+
+.center .last .last-container ul li {
+  padding: 3% 0;
+}
+
+footer {
+  background: #333333;
+}
+
+footer .container {
+  width: 60%;
+  margin: auto;
+}
+
+footer .footer-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 7% 0;
+}
+
+footer .footer-container .social p {
+  width: 70%;
+  color: white;
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+footer .footer-container .social .social-icons-footer {
+  position: relative;
+  left: 24%;
+}
+
+footer .footer-container .social .social-icons-footer a {
+  color: white;
+  padding: 3% 0;
+  padding-right: 3%;
+}
+
+footer .footer-container ul li a {
+  color: white;
+}
+
+footer .footer-container ul li a:hover {
+  color: #dadada;
+}
+
+footer p {
+  text-align: center;
+  padding: 4% 0;
+  color: white;
+}
+/*# sourceMappingURL=styles.css.map */
